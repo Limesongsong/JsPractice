@@ -13,6 +13,7 @@ var minWindow = function(s, t) {
       if(need.get(c) === 0) needType -= 1
     }
     while(needType === 0) {
+      console.log(r)
       const newRes = s.substring(l, r+1)
       if(!res || newRes.length < res.length) res = newRes
 
@@ -27,4 +28,4 @@ var minWindow = function(s, t) {
   }
   return res;
 }
-console.log('result:', minWindow("ADOBECODEBANC", "ABC"))
+console.log('result:', minWindow("cabwefgewcwaefgcf", "cae"))
